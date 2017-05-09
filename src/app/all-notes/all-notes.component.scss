@@ -1,0 +1,60 @@
+@import "src/style/partials/theme";
+
+.note-list-container {
+  @include flex-columns-centered;
+  margin-top: 20px;
+  max-height: 600px;
+  overflow: auto;
+}
+
+.empty-message {
+  color: lightgrey;
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.note-el {
+  display: flex;
+  width: 400px;
+  margin: 10px 0 10px 72px; 
+  .doc-el {
+    color: white;
+    background-color: $primary-color;
+    border-radius: 2px 0 0 2px;
+    i {
+      margin-top: 6px;
+      padding: 0 5px;
+    }
+  }  
+  .note-title {
+    border: 1px solid $primary-color;
+    border-radius: 0 2px 2px 0;
+    padding: 5px;
+    font-size: 20px;
+    width: 300px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  button {
+    color: lightgrey;
+    visibility: hidden;
+  }
+  button:hover {
+    color: $secondary-color;
+  }
+  &:hover button {
+    visibility: visible;
+  }
+}
+
+.add-btn {
+  margin: 10px 0 0 15px;
+  i {
+    font-size: 36px;
+    color: $secondary-color;
+    &:hover {
+      color: $primary-color;
+    }
+  }
+}

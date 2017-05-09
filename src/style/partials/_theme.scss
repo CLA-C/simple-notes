@@ -1,0 +1,22 @@
+//theme the application
+
+/*COLORS*/
+$primary-color: #9C27B0;
+$secondary-color: #BA68C8;
+
+/*TYPOGRAPHY*/
+
+//font testo base
+$primary-font: 'Roboto';
+
+//font titoli
+$title-font: 'Montserrat';
+
+
+//useful mixins
+
+@mixin flex-columns-centered {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
